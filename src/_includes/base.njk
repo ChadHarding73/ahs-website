@@ -17,7 +17,7 @@
   <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav id="nav">
     {%- for item in site.nav %}
-    <a href="{{ item.href }}"{% if (page.url == item.href + '/') or (page.url == '/' and item.href == '/') %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    <a href="{{ item.href }}"{% if page.url == item.href %} aria-current="page"{% endif %}>{{ item.label }}</a>
     {%- endfor %}
   </nav>
 </header>

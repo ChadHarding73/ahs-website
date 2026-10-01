@@ -5,9 +5,9 @@
   "email": "angiehardingstyle@gmail.com",
   "nav": [
     { "label": "Welcome", "href": "/" },
-    { "label": "About", "href": "/about" },
-    { "label": "Services", "href": "/services" },
-    { "label": "Testimonials", "href": "/new-page" },
-    { "label": "Contact", "href": "/contact" }
+    { "label": "About", "href": "/about/" },
+    { "label": "Services", "href": "/services/" },
+    { "label": "Testimonials", "href": "/new-page/" },
+    { "label": "Contact", "href": "/contact/" }
   ]
 }
