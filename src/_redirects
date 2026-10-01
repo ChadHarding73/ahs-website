@@ -1,0 +1,9 @@
+# Squarespace leftovers: empty pages and the empty blog go home
+/testimonials   /new-page   301
+/latest         /           301
+/blog           /           301
+/blog/*         /           301
+/new-page-1     /           301
+/new-page-2     /           301
+/new-products   /           301
+/new-products-* /           301

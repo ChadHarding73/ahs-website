@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ description or 'Personal stylist and wardrobe consultant: closet consultations, personal shopping, wardrobe updates, travel and event styling.' }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace('/index.html','') }}">
+<link rel="icon" href="/images/ah-script-websize.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="page-{{ bodyClass or 'default' }}">
+<header class="site-header">
+  <a class="logo" href="/"><img src="/images/ah-script-websize.jpg" alt="Angie Harding Style" width="420" height="120"></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav">
+    {%- for item in site.nav %}
+    <a href="{{ item.href }}"{% if (page.url == item.href + '/') or (page.url == '/' and item.href == '/') %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    {%- endfor %}
+  </nav>
+</header>
+<main>
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+  <div class="social">
+    <a href="{{ site.instagram }}" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+    <a href="mailto:{{ site.email }}" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg></a>
+  </div>
+  <p>Copyright Angie Harding Style | All Rights Reserved</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

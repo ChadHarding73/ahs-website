@@ -1,0 +1,21 @@
+{
+  "name": "angie-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf _site && eleventy",
+    "serve": "eleventy --serve --port 8090"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "~3.1.6"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

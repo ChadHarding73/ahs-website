@@ -1,0 +1,13 @@
+{
+  "title": "Angie Harding Style",
+  "url": "https://www.angiehardingstyle.com",
+  "instagram": "https://instagram.com/angiehardingstyle",
+  "email": "angiehardingstyle@gmail.com",
+  "nav": [
+    { "label": "Welcome", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Testimonials", "href": "/new-page" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}
